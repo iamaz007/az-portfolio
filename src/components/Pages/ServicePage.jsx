@@ -1,7 +1,7 @@
 import React from 'react';
 import Spacing from '../Spacing';
 import SectionHeadingStyle3 from '../SectionHeading/SectionHeadingStyle3';
-import ServiceStyle2 from '../Service/ServiceStyle2';
+import Projects from '../Projects/Projects';
 import SectionHeading from '../SectionHeading';
 import PricingTableList from '../PricingTable/PricingTableList';
 import CtaStyle2 from '../Cta/CtaStyle2';
@@ -62,7 +62,7 @@ export default function ServicePage() {
       />
       <Spacing lg="75" md="60" />
       <div className="container">
-        <ServiceStyle2 data={serviceData} />
+        <Projects data={serviceData} />
       </div>
       <Spacing lg="150" md="80" />
       <section className="cs_gray_bg_2 cs_shape_animation_2">

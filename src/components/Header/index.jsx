@@ -27,9 +27,8 @@ export default function Header({
   }, []);
   return (
     <header
-      className={`cs_site_header cs_style_1 cs_sticky_header ${
-        colorVariant ? colorVariant : 'cs_primary_color'
-      } ${isSticky ? 'cs_gescout_show' : ''}`}
+      className={`cs_site_header cs_style_1 cs_sticky_header ${colorVariant ? colorVariant : 'cs_primary_color'
+        } ${isSticky ? 'cs_gescout_show' : ''}`}
     >
       <div className="cs_main_header">
         <div className="container">
@@ -41,159 +40,12 @@ export default function Header({
             </div>
             <div className="cs_main_header_center">
               <div className="cs_nav cs_medium cs_primary_font">
-                <ul
-                  className={`${
-                    mobileToggle ? 'cs_nav_list cs_active' : 'cs_nav_list'
-                  }`}
-                >
-                  <li className="menu-item-has-children cs_mega_menu">
+                <ul className={`${mobileToggle ? 'cs_nav_list cs_active' : 'cs_nav_list'}`}>
+                  <li>
                     <Link to="/">Home</Link>
-                    <DropDown>
-                      <ul className="cs_mega_wrapper">
-                        <li className="menu-item-has-children">
-                          <Link to="/">Dark Version</Link>
-                          <DropDown>
-                            <ul>
-                              <li>
-                                <Link to="/">Creative Agency</Link>
-                              </li>
-                              <li>
-                                <Link to="/marketing-agency">
-                                  Marketing Agency
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="/studio-agency">Studio Agency</Link>
-                              </li>
-                              <li>
-                                <Link to="/digital-agency">Digital Agency</Link>
-                              </li>
-                              <li>
-                                <Link to="/tech-startup">Tech Startup</Link>
-                              </li>
-                            </ul>
-                          </DropDown>
-                        </li>
-                        <li className="menu-item-has-children">
-                          <Link to="/">Light Version</Link>
-                          <DropDown>
-                            <ul>
-                              <li>
-                                <Link to="/light">Creative Agency</Link>
-                              </li>
-                              <li>
-                                <Link to="/light/marketing-agency">
-                                  Marketing Agency
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="/light/studio-agency">
-                                  Studio Agency
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="/light/digital-agency">
-                                  Digital Agency
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="/light/tech-startup">
-                                  Tech Startup
-                                </Link>
-                              </li>
-                            </ul>
-                          </DropDown>
-                        </li>
-                      </ul>
-                    </DropDown>
                   </li>
                   <li>
-                    <Link to="about">About</Link>
-                  </li>
-                  <li className="menu-item-has-children">
-                    <Link to="service">Service</Link>
-                    <DropDown>
-                      <ul>
-                        <li>
-                          <Link to="service">Service</Link>
-                        </li>
-                        <li>
-                          <Link to="service/service-details">
-                            Service Details
-                          </Link>
-                        </li>
-                      </ul>
-                    </DropDown>
-                  </li>
-                  <li className="menu-item-has-children">
-                    <Link to="blog">Blog</Link>
-                    <DropDown>
-                      <ul>
-                        <li>
-                          <Link to="blog">Blog Standard</Link>
-                        </li>
-                        <li>
-                          <Link to="blog-list">Blog List</Link>
-                        </li>
-                        <li>
-                          <Link to="blog/blog-details">Blog Details</Link>
-                        </li>
-                      </ul>
-                    </DropDown>
-                  </li>
-                  <li className="menu-item-has-children">
-                    <Link to="shop">Shop</Link>
-                    <DropDown>
-                      <ul>
-                        <li>
-                          <Link to="shop">Our Shop</Link>
-                        </li>
-                        <li>
-                          <Link to="shop/product-details">Shop Details</Link>
-                        </li>
-                        <li>
-                          <Link to="shop/cart">Cart</Link>
-                        </li>
-                        <li>
-                          <Link to="shop/checkout">Checkout</Link>
-                        </li>
-                        <li>
-                          <Link to="shop/success">Success Order</Link>
-                        </li>
-                        <li>
-                          <Link to="shop/wishlist">Wishlist</Link>
-                        </li>
-                      </ul>
-                    </DropDown>
-                  </li>
-                  <li className="menu-item-has-children">
-                    <Link to="/">Pages</Link>
-                    <DropDown>
-                      <ul>
-                        <li>
-                          <Link to="portfolio">Portfolio</Link>
-                        </li>
-                        <li>
-                          <Link to="portfolio/portfolio-details">
-                            Portfolio Details
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="case-study-details">
-                            Case Study Details
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="team">Team</Link>
-                        </li>
-                        <li>
-                          <Link to="team/team-details">Team Details</Link>
-                        </li>
-                      </ul>
-                    </DropDown>
-                  </li>
-                  <li>
-                    <Link to="contact">Contact</Link>
+                    <Link to="projects">Projects</Link>
                   </li>
                 </ul>
                 <span
@@ -202,8 +54,7 @@ export default function Header({
                       ? 'cs_menu_toggle cs_teggle_active'
                       : 'cs_menu_toggle'
                   }
-                  onClick={() => setMobileToggle(!mobileToggle)}
-                >
+                  onClick={() => setMobileToggle(!mobileToggle)}>
                   <span></span>
                 </span>
               </div>
@@ -235,9 +86,8 @@ export default function Header({
               )}
               <Link
                 to={actionBtnUrl}
-                className={`cs_btn cs_style_1  ${
-                  colorVariant ? 'cs_btn_white' : ''
-                }`}
+                className={`cs_btn cs_style_1  ${colorVariant ? 'cs_btn_white' : ''
+                  }`}
               >
                 {actionBtnText}
               </Link>

@@ -9,7 +9,7 @@ export default function HeroStyle3({ title, scrollingText, thumbnailSrc }) {
     >
       <div className="container">
         <div className="cs_hero_text position-relative">
-          <h1 className="cs_hero_title cs_fs_68 text-uppercase">
+          <h1 className="cs_hero_title cs_fs_48 text-uppercase">
             {parse(title)}
           </h1>
           <div className="cs_moving_text_wrap">

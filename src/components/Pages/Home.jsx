@@ -4,7 +4,7 @@ import Spacing from '../Spacing';
 import FunFact from '../FunFact';
 import About from '../About';
 import WhyChose from '../WhyChose';
-import Service from '../Service';
+import Service from '../Projects';
 import Portfolio from '../Portfolio';
 import Button from '../Button';
 import SectionHeading from '../SectionHeading';

@@ -16,14 +16,13 @@ export default function SectionHeadingStyle3({
 }) {
   return (
     <div
-      className={`cs_section_heading cs_style_1 cs_type_3 ${
-        variant ? variant : ''
-      }`}
+      className={`cs_section_heading cs_style_1 cs_type_3 ${variant ? variant : ''
+        }`}
     >
       <div className="container">
         {subTitle && (
           <p className="cs_section_subtitle cs_accent_color cs_fs_21 mb-0">
-            {href ? <Link to={href}>{subTitle}</Link> : subTitle}
+            {href ? <Link target='_blank' to={href}>{subTitle}</Link> : subTitle}
           </p>
         )}
         {category && <span className="cs_category">{category}</span>}

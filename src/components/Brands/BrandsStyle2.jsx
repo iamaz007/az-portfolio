@@ -1,4 +1,5 @@
 import React from 'react';
+import { getImageUrl } from '../../helpers/ImageHelper';
 
 export default function BrandsStyle2({ data }) {
   return (
@@ -7,7 +8,7 @@ export default function BrandsStyle2({ data }) {
         {data?.map((item, index) => (
           <div className="cs_brand" key={index}>
             <div>
-              <img src={item.logoSrc} alt={item.logoAlt} />
+              <img src={getImageUrl(item.logoSrc)} alt={item.logoAlt} />
             </div>
           </div>
         ))}
